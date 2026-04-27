@@ -72,10 +72,8 @@ main {
 
 .hero {
   min-height: calc(100vh - 68px);
-  display: grid;
-  grid-template-columns: minmax(0, 1.2fr) minmax(280px, 0.8fr);
+  display: flex;
   align-items: center;
-  gap: clamp(32px, 8vw, 92px);
   padding: 56px 0 40px;
 }
 
@@ -116,12 +114,6 @@ h3 {
   letter-spacing: 0;
 }
 
-.lead {
-  max-width: 680px;
-  color: #46515c;
-  font-size: clamp(1.08rem, 2vw, 1.35rem);
-}
-
 .actions {
   display: flex;
   flex-wrap: wrap;
@@ -156,55 +148,6 @@ h3 {
 
 .button.secondary:hover {
   background: rgba(0, 109, 119, 0.08);
-}
-
-.portrait-wrap {
-  margin: 0;
-  justify-self: end;
-  width: min(360px, 100%);
-}
-
-.portrait {
-  display: block;
-  width: 100%;
-  aspect-ratio: 346 / 424;
-  object-fit: cover;
-  border-radius: 8px;
-  box-shadow: var(--shadow);
-}
-
-.snapshot {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  border-top: 1px solid var(--line);
-  border-bottom: 1px solid var(--line);
-  background: rgba(255, 255, 255, 0.52);
-}
-
-.snapshot > div {
-  padding: 24px clamp(16px, 3vw, 32px);
-  border-right: 1px solid var(--line);
-}
-
-.snapshot > div:last-child {
-  border-right: 0;
-}
-
-.metric,
-.label {
-  display: block;
-}
-
-.metric {
-  color: var(--accent-strong);
-  font-size: clamp(1.55rem, 3vw, 2.4rem);
-  font-weight: 780;
-  line-height: 1.1;
-}
-
-.label {
-  color: var(--muted);
-  font-size: 0.92rem;
 }
 
 .section {
@@ -341,25 +284,10 @@ h3 {
     padding-top: 44px;
   }
 
-  .portrait-wrap {
-    justify-self: start;
-    width: min(320px, 100%);
-  }
-
-  .snapshot,
   .two-column,
   .split,
   .item {
     grid-template-columns: 1fr;
-  }
-
-  .snapshot > div {
-    border-right: 0;
-    border-bottom: 1px solid var(--line);
-  }
-
-  .snapshot > div:last-child {
-    border-bottom: 0;
   }
 
   .item {

@@ -10,7 +10,6 @@ Open `index.html` directly in a browser.
 
 - `index.html` - page content
 - `styles.css` - responsive styling
-- `assets/profile.png` - portrait
 - `assets/jiaqi-ge-cv.pdf` - downloadable CV
 
 ## Deploy
