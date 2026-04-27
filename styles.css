@@ -230,10 +230,8 @@ h3 {
 .flower,
 .mini-flower {
   position: relative;
-  display: inline-grid;
-  border-radius: 50%;
+  display: inline-block;
   vertical-align: middle;
-  place-items: center;
   animation: spin 18s linear infinite;
 }
 
@@ -249,64 +247,100 @@ h3 {
   height: 1.05rem;
 }
 
-.flower::before,
-.flower::after,
-.flower span::before,
-.flower span::after,
+.flower i,
 .mini-flower::before,
-.mini-flower::after {
+.mini-flower::after,
+.mini-flower span::before,
+.mini-flower span::after {
   position: absolute;
+  left: 50%;
+  top: 50%;
   content: "";
   border-radius: 50% 50% 44% 44%;
   background: rgba(213, 224, 216, 0.82);
   border: 1px solid rgba(247, 250, 241, 0.82);
-  transform-origin: center bottom;
+  transform-origin: 50% 92%;
 }
 
-.flower::before,
-.flower::after,
-.flower span::before,
-.flower span::after {
-  width: 0.2em;
-  height: 0.36em;
+.flower i {
+  width: 0.16em;
+  height: 0.29em;
+  margin-left: -0.08em;
+  margin-top: -0.29em;
+}
+
+.flower i:nth-child(1) {
+  transform: rotate(0deg) translateY(-0.08em);
+}
+
+.flower i:nth-child(2) {
+  transform: rotate(72deg) translateY(-0.08em);
+}
+
+.flower i:nth-child(3) {
+  transform: rotate(144deg) translateY(-0.08em);
+}
+
+.flower i:nth-child(4) {
+  transform: rotate(216deg) translateY(-0.08em);
+}
+
+.flower i:nth-child(5) {
+  transform: rotate(288deg) translateY(-0.08em);
 }
 
 .mini-flower::before,
-.mini-flower::after {
-  width: 0.34rem;
-  height: 0.58rem;
+.mini-flower::after,
+.mini-flower span::before,
+.mini-flower span::after {
+  width: 0.2em;
+  height: 0.36em;
+  margin-left: -0.1em;
+  margin-top: -0.36em;
 }
 
-.flower::before,
 .mini-flower::before {
-  transform: translateY(-34%) rotate(0deg);
+  transform: rotate(0deg) translateY(-0.09rem);
 }
 
-.flower::after,
 .mini-flower::after {
-  transform: translateX(34%) rotate(72deg);
+  transform: rotate(90deg) translateY(-0.09rem);
 }
 
-.flower span::before {
-  transform: translateY(34%) rotate(144deg);
+.mini-flower span::before {
+  transform: rotate(180deg) translateY(-0.09rem);
 }
 
-.flower span::after {
-  transform: translateX(-34%) rotate(216deg);
+.mini-flower span::after {
+  transform: rotate(270deg) translateY(-0.09rem);
 }
 
-.flower span,
-.mini-flower {
+.flower span {
   background: rgba(169, 214, 203, 0.94);
   box-shadow: 0 0 0 0.04em rgba(244, 241, 234, 0.54);
 }
 
-.flower span {
+.flower span,
+.mini-flower span {
   position: relative;
+  display: block;
+  left: 50%;
+  top: 50%;
   width: 0.18em;
   height: 0.18em;
+  margin-left: -0.09em;
+  margin-top: -0.09em;
   border-radius: 50%;
+  background: rgba(169, 214, 203, 0.94);
+  box-shadow: 0 0 0 0.04em rgba(244, 241, 234, 0.54);
   z-index: 1;
+}
+
+.mini-flower span {
+  width: 0.32rem;
+  height: 0.32rem;
+  margin-left: -0.16rem;
+  margin-top: -0.16rem;
 }
 
 @keyframes spin {
@@ -473,12 +507,11 @@ h3 {
     height: 0.42em;
   }
 
-  .flower::before,
-  .flower::after,
-  .flower span::before,
-  .flower span::after {
-    width: 0.16em;
-    height: 0.28em;
+  .flower i {
+    width: 0.12em;
+    height: 0.22em;
+    margin-left: -0.06em;
+    margin-top: -0.22em;
   }
 
   .two-column,
