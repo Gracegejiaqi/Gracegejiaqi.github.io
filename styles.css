@@ -1,15 +1,15 @@
 :root {
   color-scheme: light;
-  --ink: #1d2329;
+  --ink: #181d23;
   --muted: #66717e;
-  --line: #d9e0e6;
-  --paper: #f7f4ee;
+  --line: #eadde2;
+  --paper: #fff7f9;
   --white: #ffffff;
-  --accent: #006d77;
-  --accent-strong: #004f57;
-  --amber: #b06b2d;
-  --sage: #6c7d47;
-  --shadow: 0 20px 50px rgba(35, 45, 55, 0.12);
+  --accent: #cf3e7f;
+  --accent-strong: #89235a;
+  --amber: #b86b88;
+  --sage: #43776c;
+  --shadow: 0 24px 60px rgba(117, 67, 85, 0.12);
 }
 
 * {
@@ -23,7 +23,9 @@ html {
 body {
   margin: 0;
   font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  background: var(--paper);
+  background:
+    radial-gradient(circle at 6% 10%, rgba(255, 205, 222, 0.6), transparent 28rem),
+    linear-gradient(120deg, #fff0f5 0%, #fffafc 50%, #fff7f9 100%);
   color: var(--ink);
   line-height: 1.65;
 }
@@ -41,14 +43,15 @@ a {
   align-items: center;
   justify-content: space-between;
   gap: 24px;
-  padding: 18px clamp(20px, 5vw, 72px);
-  background: rgba(247, 244, 238, 0.9);
-  border-bottom: 1px solid rgba(217, 224, 230, 0.85);
+  padding: 16px clamp(20px, 5vw, 72px);
+  background: rgba(255, 247, 249, 0.78);
+  border-bottom: 1px solid rgba(234, 221, 226, 0.86);
   backdrop-filter: blur(16px);
 }
 
 .brand {
-  font-weight: 760;
+  font-size: 1.06rem;
+  font-weight: 720;
   letter-spacing: 0;
 }
 
@@ -66,7 +69,7 @@ a {
 }
 
 main {
-  width: min(1120px, calc(100% - 40px));
+  width: min(1180px, calc(100% - 40px));
   margin: 0 auto;
 }
 
@@ -74,7 +77,7 @@ main {
   min-height: calc(100vh - 68px);
   display: flex;
   align-items: center;
-  padding: 56px 0 40px;
+  padding: clamp(78px, 12vw, 140px) 0 64px;
 }
 
 .eyebrow {
@@ -94,9 +97,11 @@ p {
 }
 
 h1 {
-  margin-bottom: 20px;
-  font-size: clamp(3.6rem, 9vw, 7.4rem);
-  line-height: 0.92;
+  max-width: 980px;
+  margin-bottom: 28px;
+  font-size: clamp(4.2rem, 10.5vw, 9rem);
+  font-weight: 300;
+  line-height: 0.98;
   letter-spacing: 0;
 }
 
@@ -118,7 +123,7 @@ h3 {
   display: flex;
   flex-wrap: wrap;
   gap: 12px;
-  margin-top: 28px;
+  margin-top: 34px;
 }
 
 .button {
@@ -126,15 +131,16 @@ h3 {
   min-height: 44px;
   align-items: center;
   justify-content: center;
-  border: 1px solid var(--accent);
+  border: 1px solid rgba(207, 62, 127, 0.58);
   border-radius: 6px;
-  padding: 10px 18px;
-  font-weight: 720;
+  padding: 10px 20px;
+  font-weight: 680;
 }
 
 .button.primary {
   background: var(--accent);
   color: var(--white);
+  box-shadow: 0 12px 28px rgba(207, 62, 127, 0.2);
 }
 
 .button.primary:hover {
@@ -144,14 +150,73 @@ h3 {
 
 .button.secondary {
   color: var(--accent-strong);
+  background: rgba(255, 255, 255, 0.46);
 }
 
 .button.secondary:hover {
-  background: rgba(0, 109, 119, 0.08);
+  background: rgba(207, 62, 127, 0.08);
+}
+
+.flower {
+  position: relative;
+  top: -0.08em;
+  display: inline-grid;
+  width: 0.76em;
+  height: 0.76em;
+  margin-left: 0.08em;
+  vertical-align: middle;
+  place-items: center;
+}
+
+.flower,
+.flower::before,
+.flower::after,
+.flower span::before,
+.flower span::after {
+  border-radius: 48% 52% 48% 52%;
+}
+
+.flower::before,
+.flower::after,
+.flower span::before,
+.flower span::after {
+  position: absolute;
+  width: 0.32em;
+  height: 0.56em;
+  content: "";
+  background: #ff91c2;
+  border: 0.045em solid #f6539c;
+  transform-origin: center bottom;
+}
+
+.flower::before {
+  transform: translateY(-0.18em) rotate(0deg);
+}
+
+.flower::after {
+  transform: translateX(0.18em) rotate(72deg);
+}
+
+.flower span::before {
+  transform: translateY(0.18em) rotate(144deg);
+}
+
+.flower span::after {
+  transform: translateX(-0.18em) rotate(216deg);
+}
+
+.flower span {
+  position: relative;
+  width: 0.2em;
+  height: 0.2em;
+  border-radius: 50%;
+  background: #f6539c;
+  box-shadow: 0 0 0 0.04em #ffd1e4;
+  z-index: 1;
 }
 
 .section {
-  padding: clamp(64px, 10vw, 108px) 0;
+  padding: clamp(72px, 10vw, 118px) 0;
   border-bottom: 1px solid var(--line);
 }
 
@@ -163,9 +228,9 @@ h3 {
 .feature {
   padding: clamp(24px, 4vw, 36px);
   margin-bottom: 34px;
-  border-left: 5px solid var(--sage);
-  background: var(--white);
-  box-shadow: 0 10px 30px rgba(35, 45, 55, 0.08);
+  border-left: 5px solid var(--accent);
+  background: rgba(255, 255, 255, 0.62);
+  box-shadow: var(--shadow);
 }
 
 .feature p:last-child,
@@ -224,10 +289,11 @@ h3 {
 
 .card,
 .skill-panel {
-  background: rgba(255, 255, 255, 0.68);
+  background: rgba(255, 255, 255, 0.58);
   border: 1px solid var(--line);
   border-radius: 8px;
   padding: 24px;
+  box-shadow: 0 12px 34px rgba(117, 67, 85, 0.08);
 }
 
 .skill-panel h3 {
@@ -244,11 +310,11 @@ h3 {
 }
 
 .chips li {
-  border: 1px solid rgba(0, 109, 119, 0.24);
+  border: 1px solid rgba(207, 62, 127, 0.24);
   border-radius: 999px;
   padding: 7px 12px;
-  background: rgba(0, 109, 119, 0.06);
-  color: var(--accent-strong);
+  background: rgba(255, 255, 255, 0.56);
+  color: #7a2e58;
   font-size: 0.92rem;
   font-weight: 650;
 }
