@@ -20,7 +20,7 @@ endobj
 endobj
 4 0 obj
 <<
-/Length 7063
+/Length 6696
 >>
 stream
 0 g 0 G
@@ -103,21 +103,21 @@ BT
 0 g 0 G
  -2.989 -19.649 Td [(R)20(esear)15(c)15(h)-250(Assist)-10(ant)-250(\025)-250(Repository)-250(QA)-250(f)30(or)-250(Softw)25(ar)10(e)-250(Issue)-250(R)20(esolution)]TJ/F72 10.9091 Tf 0 -13.549 Td [(Shanghai)-250(Jiao)-250(T)85(ong)-250(U)30(niv)30(er)15(sity)25(,)-250(advised)-250(by)-250(Xiaodong)-250(Gu)]TJ/F43 10.9091 Tf [-12031(F)20(eb)-250(2026)-250(\025)-250(Present)]TJ
 0 g 0 G
-/F71 10.9091 Tf 4.364 -15.636 Td [(\210)]TJ
+/F71 10.9091 Tf 4.364 -15.636 Td [()]TJ
 0 g 0 G
-/F43 10.9091 Tf [-500(Contr)-20(ibuted)-198(to)-197(the)-198(de)25(v)35(elopment)-198(and)-197(e)25(v)25(aluation)-198(of)]TJ/F45 10.9091 Tf [-248(a)-198(QA)-198(system)]TJ/F43 10.9091 Tf [(,)-198(an)-197(issue-dr)-20(iv)35(en)-198(repositor)-20(y)-198(QA)-197(module)-198(that)]TJ 9.272 -13.549 Td [(enables)-250(softw)25(are)-250(ag)25(ents)-250(to)-250(proactiv)35(el)25(y)-250(acq)10(uire)-250(repositor)-20(y)25(-speci\034c)-250(kno)35(w)35(ledg)25(e)-250(bef)40(ore)-250(patc)15(h)-250(g)25(eneration.)]TJ
+/F43 10.9091 Tf [()]TJ/F45 10.9091 Tf [()]TJ/F43 10.9091 Tf [()]TJ 9.272 -13.549 Td [()]TJ
 0 g 0 G
-/F71 10.9091 Tf -9.272 -20.025 Td [(\210)]TJ
+/F71 10.9091 Tf -9.272 -20.025 Td [()]TJ
 0 g 0 G
-/F43 10.9091 Tf [-500(Designed)-250(and)-250(e)35(x)30(ecuted)-250(comparativ)35(e)-250(e)35(xper)-20(iments)-249(on)-250(S)20(WE-benc)15(h-s)15(ty)30(le)-250(tasks,)-250(benc)15(hmarking)]TJ/F45 10.9091 Tf [-250(QA)]TJ/F43 10.9091 Tf [(-)]TJ 9.272 -13.549 Td [(augmented)-250(ag)25(ents)-250(ag)20(ains)15(t)-250(baselines)-250(to)-250(e)25(v)25(aluate)-250(q)10(ues)15(tion)-250(q)10(uality)-250(and)-250(tra)25(jector)-20(y)-250(s)15(tag)25(es.)]TJ
+/F43 10.9091 Tf [()]TJ/F45 10.9091 Tf [()]TJ/F43 10.9091 Tf [()]TJ 9.272 -13.549 Td [()]TJ
 0 g 0 G
-/F71 10.9091 Tf -9.272 -20.025 Td [(\210)]TJ
+/F71 10.9091 Tf -9.272 -20.025 Td [()]TJ
 0 g 0 G
-/F43 10.9091 Tf [-500(Built)-285(comprehensiv)35(e)-286(anal)25(y)25(sis)-285(pipelines)-286(to)-285(e)25(v)25(aluate)]TJ/F45 10.9091 Tf [-285(the)-285(module)]TJ/F43 10.9091 Tf [-286(at)-285(q)10(ues)15(tion-le)25(v)35(el,)-294(set-le)25(v)35(el,)-295(and)-285(pair)-20(wise)]TJ 9.272 -13.549 Td [(g)-10(ranular)-20(ities;)-250(measured)-250(its)-250(impact)-250(on)-250(repair)-250(success,)-250(patc)15(h)-250(alignment,)-250(and)-250(s)15(tag)25(e-wise)-250(beha)30(vior)50(.)]TJ
+/F43 10.9091 Tf [()]TJ/F45 10.9091 Tf [()]TJ/F43 10.9091 Tf [()]TJ 9.272 -13.549 Td [()]TJ
 0 g 0 G
-/F71 10.9091 Tf -9.272 -20.025 Td [(\210)]TJ
+/F71 10.9091 Tf -9.272 -20.025 Td [()]TJ
 0 g 0 G
-/F43 10.9091 Tf [-500(Orc)15(hes)15(trated)-343(result)-343(inter)-25(pretation)-343(and)-343(manuscr)-20(ipt)-342(preparation,)-367(including)-342(the)-343(design)-343(of)-343(ablation)-343(s)15(tudies)]TJ 9.272 -13.549 Td [(and)-250(the)-250(creation)-250(of)-250(tec)15(hnical)-250(\034gures)-250(to)-250(demons)15(trate)]TJ/F45 10.9091 Tf [-250(the)-250(module)]TJ/F43 10.9091 Tf [(')45(s)-250(e\033ectiv)35(eness.)]TJ/F45 10.9091 Tf -13.636 -15.448 Td [(R)20(esear)15(c)15(h)-250(Assist)-10(ant)-250(\025)-250(Explaining)-250(AI)-250(Models)-250(thr)15(ough)-250(Me)10(t)-10(amorphic)-250(Pr)15(operty)-250(Generation)]TJ/F72 10.9091 Tf 0 -13.549 Td [(Advisor)30(:)-361(Pr)25(of.)-361(N)20(azar)30(eno)-250(A)25(guirr)30(e)-250(nazar)30(eno.aguirr)30(e@gtiit.edu.cn)]TJ/F43 10.9091 Tf [-8062(Oct)-250(2025)-250(\025)-250(F)20(eb)-250(2026)]TJ
+/F43 10.9091 Tf [()]TJ 9.272 -13.549 Td [()]TJ/F45 10.9091 Tf [()]TJ/F43 10.9091 Tf [()]TJ/F45 10.9091 Tf -13.636 -15.448 Td [(R)20(esear)15(c)15(h)-250(Assist)-10(ant)-250(\025)-250(Explaining)-250(AI)-250(Models)-250(thr)15(ough)-250(Me)10(t)-10(amorphic)-250(Pr)15(operty)-250(Generation)]TJ/F72 10.9091 Tf 0 -13.549 Td [(Advisor)30(:)-361(Pr)25(of.)-361(N)20(azar)30(eno)-250(A)25(guirr)30(e)-250(nazar)30(eno.aguirr)30(e@gtiit.edu.cn)]TJ/F43 10.9091 Tf [-8062(Oct)-250(2025)-250(\025)-250(F)20(eb)-250(2026)]TJ
 0 g 0 G
 /F71 10.9091 Tf 4.364 -15.636 Td [(\210)]TJ
 0 g 0 G
@@ -128,6 +128,26 @@ BT
 /F43 10.9091 Tf [-500(Implemented)-371(candidate)-370(metamor)-25(phic-proper)-25(ty)-371(g)25(eneration)-370(and)-371(c)15(hec)20(king)-371(\050INV)-370(in)30(v)25(ar)-20(iance)-371(/)-370(DIR)-371(direc-)]TJ 9.272 -13.549 Td [(tional\051)-250(to)-250(e)25(v)25(aluate)-250(model)-250(beha)30(vior)-250(under)-250(k)65(-s)15(tep)-250(transf)40(or)-20(mations.)]TJ
 0 g 0 G
 0 g 0 G
+ET
+
+q
+1 1 1 rg 1 1 1 RG
+68 151 480 139 re f
+Q
+0 g 0 G
+BT
+/F71 9.35 Tf 1 0 0 1 76 283.500 Tm [(\210)]TJ
+/F43 9.35 Tf 1 0 0 1 91 283.500 Tm (Contributed to manuscript writing and revision, including related work, experimental results,) Tj
+/F43 9.35 Tf 1 0 0 1 91 272.700 Tm (method analysis, ablation discussion, and figure/result interpretation.) Tj
+/F71 9.35 Tf 1 0 0 1 76 257.000 Tm [(\210)]TJ
+/F43 9.35 Tf 1 0 0 1 91 257.000 Tm (Designed and executed baseline vs. QA-augmented experiments for repository-level software) Tj
+/F43 9.35 Tf 1 0 0 1 91 246.200 Tm (issue resolution.) Tj
+/F71 9.35 Tf 1 0 0 1 76 230.500 Tm [(\210)]TJ
+/F43 9.35 Tf 1 0 0 1 91 230.500 Tm (Built a judge-based evaluation pipeline for question-level, set-level, and pairwise assessment,) Tj
+/F43 9.35 Tf 1 0 0 1 91 219.700 Tm (and verified the scoring and aggregation process.) Tj
+/F71 9.35 Tf 1 0 0 1 76 204.000 Tm [(\210)]TJ
+/F43 9.35 Tf 1 0 0 1 91 204.000 Tm (Conducted fail-to-pass trajectory analysis, including repair-stage segmentation, QA-usage) Tj
+/F43 9.35 Tf 1 0 0 1 91 193.200 Tm (analysis, and patch-alignment analysis, and prepared supporting figures and reports.) Tj
 ET
 
 endstream
@@ -892,34 +912,34 @@ xref
 0000000054 00000 n 
 0000000120 00000 n 
 0000000169 00000 n 
-0000007284 00000 n 
-0000007408 00000 n 
-0000007613 00000 n 
-0000007717 00000 n 
-0000007907 00000 n 
-0000008341 00000 n 
-0000009068 00000 n 
-0000049833 00000 n 
-0000050778 00000 n 
-0000051225 00000 n 
-0000051413 00000 n 
-0000052054 00000 n 
-0000091016 00000 n 
-0000091960 00000 n 
-0000092389 00000 n 
-0000092581 00000 n 
-0000092648 00000 n 
-0000092887 00000 n 
-0000095326 00000 n 
-0000096107 00000 n 
-0000096131 00000 n 
-0000096321 00000 n 
-0000096799 00000 n 
-0000125012 00000 n 
-0000125957 00000 n 
-0000126309 00000 n 
-0000126418 00000 n 
-0000128218 00000 n 
+0000006917 00000 n 
+0000007041 00000 n 
+0000007246 00000 n 
+0000007350 00000 n 
+0000007540 00000 n 
+0000007974 00000 n 
+0000008701 00000 n 
+0000049466 00000 n 
+0000050411 00000 n 
+0000050858 00000 n 
+0000051046 00000 n 
+0000051687 00000 n 
+0000090649 00000 n 
+0000091593 00000 n 
+0000092022 00000 n 
+0000092214 00000 n 
+0000092281 00000 n 
+0000092520 00000 n 
+0000094959 00000 n 
+0000095740 00000 n 
+0000095764 00000 n 
+0000095954 00000 n 
+0000096432 00000 n 
+0000124645 00000 n 
+0000125590 00000 n 
+0000125942 00000 n 
+0000126051 00000 n 
+0000127851 00000 n 
 trailer
 <<
 /Size 33
@@ -927,5 +947,5 @@ trailer
 /Info 1 0 R
 >>
 startxref
-128323
+127956
 %%EOF
