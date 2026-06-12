@@ -165,11 +165,11 @@ main {
 .avatar {
   position: relative;
   flex: none;
-  width: clamp(108px, 16vw, 148px);
+  width: clamp(132px, 18vw, 176px);
   aspect-ratio: 1;
-  border-radius: 50%;
+  border-radius: var(--border-radius-lg);
   overflow: hidden;
-  background: var(--accent-soft);
+  background: #ffffff;
   border: 1px solid var(--border);
   display: flex;
   align-items: center;
@@ -188,7 +188,7 @@ main {
   inset: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 .profile-info h1 {
