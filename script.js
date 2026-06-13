@@ -34,3 +34,20 @@ const observer = new IntersectionObserver(
 );
 
 sections.forEach((section) => observer.observe(section));
+
+const wechatBtn = document.getElementById("wechat-btn");
+if (wechatBtn) {
+  const label = wechatBtn.querySelector(".wechat-label");
+  const id = wechatBtn.getAttribute("data-id");
+  wechatBtn.addEventListener("click", async () => {
+    try {
+      await navigator.clipboard.writeText(id);
+      label.textContent = "Copied: " + id;
+    } catch (e) {
+      label.textContent = id;
+    }
+    setTimeout(() => {
+      label.textContent = "WeChat";
+    }, 2000);
+  });
+}

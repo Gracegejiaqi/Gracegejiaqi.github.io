@@ -218,7 +218,8 @@ main {
   gap: 10px;
 }
 
-.contact-links a {
+.contact-links a,
+.contact-links button {
   display: inline-flex;
   align-items: center;
   gap: 7px;
@@ -227,11 +228,15 @@ main {
   border-radius: 999px;
   font-size: 0.88rem;
   font-weight: 500;
+  font-family: inherit;
   color: var(--muted);
+  background: transparent;
+  cursor: pointer;
   transition: color 150ms ease, border-color 150ms ease, background-color 150ms ease;
 }
 
-.contact-links a:hover {
+.contact-links a:hover,
+.contact-links button:hover {
   color: var(--accent);
   border-color: var(--accent);
   background: var(--accent-soft);
