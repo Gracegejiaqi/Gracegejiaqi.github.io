@@ -284,6 +284,10 @@ main {
   font-size: 0.98rem;
 }
 
+.info-title-spaced {
+  margin-top: 14px;
+}
+
 .info-meta {
   margin-bottom: 2px;
   color: var(--muted);
@@ -313,6 +317,11 @@ main {
   justify-content: space-between;
   gap: 18px;
   flex-wrap: wrap;
+}
+
+.entry-head h3 {
+  flex: 1 1 auto;
+  min-width: 0;
 }
 
 .entry h3 {
