@@ -41,14 +41,14 @@
         </div>
         <div class="profile-info">
           <h1>Jiaqi Ge</h1>
-          <p class="role">Undergraduate Student, B.Sc. in Mathematics with Computer Science</p>
+          <p class="role">Undergraduate Student, B.Sc. in Mathematics and Applied Mathematics</p>
           <p class="affil">Guangdong Technion &ndash; Israel Institute of Technology</p>
           <div class="contact-links">
             <a href="mailto:ge24876@gtiit.edu.cn">
               <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
               Email
             </a>
-            <a href="assets/jiaqi-ge-cv.pdf?v=20260916">
+            <a href="assets/jiaqi-ge-cv.pdf?v=20261027">
               <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"/><path d="M14 2v4a2 2 0 0 0 2 2h4"/></svg>
               CV
             </a>
@@ -68,18 +68,17 @@
         <h2>About</h2>
         <p>
           I am an undergraduate student at Guangdong Technion &ndash; Israel Institute of Technology,
-          majoring in Mathematics with Computer Science in an English-taught program. My research spans
-          machine learning, software agents, Mixture-of-Experts, and geometric learning for non-Euclidean data.
-          In Summer 2026, I completed a research exchange at the Technion in Nadav Dym's research group,
-          supervised by Tal Amir. I have also been fortunate to work with Prof. Xiaodong Gu (Shanghai Jiao
-          Tong University), Prof. Lijie Hu (MBZUAI), Prof. Nazareno Aguirre, and Prof. Antti Rasila
-          (Guangdong Technion &ndash; Israel Institute of Technology).
+          majoring in Mathematics and Applied Mathematics. My research spans efficient machine learning,
+          software agents, Mixture-of-Experts pruning, and geometric learning for non-Euclidean data.
+          In Summer 2026, I completed a research exchange at the Technion under the supervision of Tal Amir.
+          I have also worked with Prof. Xiaodong Gu (Shanghai Jiao Tong University), Prof. Lijie Hu (MBZUAI),
+          Prof. Nazareno Aguirre, and Prof. Antti Rasila (Guangdong Technion &ndash; Israel Institute of Technology).
         </p>
         <div class="info-grid">
           <div class="info-card">
             <h3>Education</h3>
             <p class="info-title">Guangdong Technion &ndash; Israel Institute of Technology</p>
-            <p class="info-meta">B.Sc. in Mathematics with Computer Science &middot; Sep 2023 &ndash; Present</p>
+            <p class="info-meta">B.Sc. in Mathematics and Applied Mathematics &middot; Sep 2023 &ndash; Present</p>
             <p class="info-title info-title-spaced">Technion &ndash; Israel Institute of Technology</p>
             <p class="info-meta">Summer Research Exchange in Non-Euclidean Deep Learning &middot; Haifa, Israel &middot; Summer 2026</p>
           </div>
@@ -93,6 +92,8 @@
             <h3>Skills</h3>
             <p class="info-title">Programming</p>
             <p class="info-meta">Python, C, C++, Java, MATLAB, Assembly</p>
+            <p class="info-title info-title-spaced">Tools &amp; Libraries</p>
+            <p class="info-meta">PyTorch, Hugging Face Transformers, Git, Linux, Chebfun, CheckList, GrammarFuzzer</p>
             <p class="info-title info-title-spaced">Languages</p>
             <p class="info-meta">Chinese (Native), English (Fluent)</p>
           </div>
@@ -104,31 +105,29 @@
 
         <article class="entry">
           <div class="entry-head">
-            <h3>Fast Document Classification with FSW</h3>
-            <span class="period">Summer 2026</span>
+            <h3>Training-Free Mixture-of-Experts Pruning</h3>
+            <span class="period">Jun 2026 &ndash; Present</span>
           </div>
-          <p class="meta">Research Exchange Student &middot; Nadav Dym's Research Group &middot; Technion &ndash; Israel Institute of Technology &middot; Haifa, Israel &middot; Supervised by Tal Amir</p>
+          <p class="meta">Research Assistant &middot; MBZUAI &ndash; Mohamed bin Zayed University of Artificial Intelligence &middot; Advised by Prof. Lijie Hu</p>
           <p>
-            Represented documents as probability measures over 300-dimensional fastText embeddings and
-            evaluated Fourier Sliced-Wasserstein representations on Amazon, Classic, and Reuters. FSW-based
-            kNN reduced per-query classification time by approximately 90&ndash;155&times;; shortlist-and-rerank
-            preserved near-WMD accuracy with 4&ndash;29&times; speedups. Extended the representations to clustering,
-            UMAP visualization, and supervised MLP and contrastive learning.
+            Developing an ACDC-style iterative pruning method that evaluates candidates through forward passes
+            on the currently pruned model, without downstream labels or post-pruning fine-tuning. At 25% expert
+            pruning, the method improves macro accuracy over official REAP from 62.22% to 65.93% on
+            LFM2.5-8B-A1B and from 41.44% to 51.67% on OLMoE-1B-7B, while also reducing C4 perplexity.
           </p>
         </article>
 
         <article class="entry">
           <div class="entry-head">
             <h3>Repository QA for Software Issue Resolution</h3>
-            <span class="period">Feb 2026 &ndash; Present</span>
+            <span class="period">Feb 2026 &ndash; May 2026</span>
           </div>
           <p class="meta">Research Assistant &middot; Shanghai Jiao Tong University &middot; Advised by Prof. Xiaodong Gu</p>
           <p>
-            Contributed to the experimental design, evaluation, and manuscript development of an
-            issue-driven repository QA framework that helps software agents acquire repository-specific
-            knowledge before patch generation. Ran baseline and QA-augmented SWE-bench experiments,
-            built judge-based evaluation pipelines at the question, set, and pairwise levels, and
-            analyzed fail-to-pass trajectories, QA usage, patch alignment, and ablation results.
+            Evaluated ACQUIRE on all 500 SWE-bench Verified issues and built LLM-as-a-judge pipelines for
+            repository-question quality. Repository QA improved Pass@1 from 58.4 to 62.2 with GPT-5-mini and
+            from 66.4 to 70.8 with DeepSeek-V3.2; trajectory analysis also found a 17.1% reduction in total
+            agent rounds after QA injection.
           </p>
           <p class="entry-links">
             <a href="https://arxiv.org/pdf/2607.11111" target="_blank" rel="noopener">Paper (arXiv PDF)</a>
@@ -138,24 +137,29 @@
 
         <article class="entry">
           <div class="entry-head">
-            <h3>Mixture-of-Experts</h3>
-            <span class="period">Apr 10, 2026 &ndash; Present</span>
+            <h3>Fast Document Classification with FSW</h3>
+            <span class="period">Summer 2026</span>
           </div>
-          <p class="meta">Research Assistant &middot; MBZUAI &ndash; Mohamed bin Zayed University of Artificial Intelligence &middot; Advised by Prof. Lijie Hu</p>
+          <p class="meta">Research Exchange Student &middot; Technion &ndash; Israel Institute of Technology &middot; Haifa, Israel &middot; Supervised by Tal Amir</p>
           <p>
-            Conducting research on Mixture-of-Experts (MoE).
+            Represented documents as probability measures over 300-dimensional fastText embeddings and
+            evaluated Fourier Sliced-Wasserstein representations on Amazon, Classic, and Reuters. FSW-based
+            kNN reduced per-query time from approximately 3 seconds to 0.02 seconds; a shortlist-and-rerank
+            strategy estimated 4&ndash;29&times; speedups while remaining near exact-WMD accuracy.
           </p>
         </article>
 
         <article class="entry">
           <div class="entry-head">
-            <h3>Metamorphic Testing for Explainable AI</h3>
+            <h3>Grammar-Based Fuzzing for Metamorphic Testing of NLP Models</h3>
             <span class="period">Oct 2025 &ndash; Feb 2026</span>
           </div>
           <p class="meta">Research Assistant &middot; Guangdong Technion &ndash; Israel Institute of Technology &middot; Advised by Prof. Nazareno Aguirre &middot; Project score: 90/100</p>
           <p>
-            Built grammar-based fuzzing pipelines for multi-step text perturbations, generated
-            metamorphic properties, and evaluated HuggingFace sentiment models with Checklist.
+            Designed grammar-based fuzzing to automatically generate multi-step perturbation chains and
+            metamorphic properties, then used CheckList to execute and evaluate INV/DIR tests. A nine-step
+            case study on 100 Twitter airline posts exposed anomalous predictions and showed how semantic
+            drift can affect metamorphic-test validity.
           </p>
           <p class="entry-links">
             <a href="assets/metamorphic-testing-report.pdf" target="_blank" rel="noopener">Report (PDF)</a>
@@ -165,13 +169,15 @@
 
         <article class="entry">
           <div class="entry-head">
-            <h3>Numerical Methods for Boundary Value Problems</h3>
+            <h3>Numerical Boundary Value Problems with Chebfun</h3>
             <span class="period">Aug 2025 &ndash; Nov 2025</span>
           </div>
           <p class="meta">Research Assistant &middot; Guangdong Technion &ndash; Israel Institute of Technology &middot; Advised by Prof. Antti Rasila &middot; Project score: 95/100</p>
           <p>
-            Studied shooting, finite-difference, and spectral methods for boundary value problems,
-            using MATLAB and Chebfun to solve nonlinear systems and Sturm-Liouville problems.
+            Wrote a 20-page report connecting IVPs, BVPs, Green's functions, and Sturm&ndash;Liouville theory
+            with MATLAB Chebfun experiments. A benchmark achieved 7.9&times;10<sup>&minus;14</sup> maximum error
+            with 13 degrees of freedom, versus 4.4&times;10<sup>&minus;7</sup> for a 1,024-point second-order
+            finite-difference method.
           </p>
           <p class="entry-links">
             <a href="assets/bvp-chebfun-report.pdf" target="_blank" rel="noopener">Report (PDF)</a>
@@ -185,12 +191,16 @@
         <h2>Publications</h2>
         <article class="entry pub">
           <div class="entry-head">
-            <h3>Manuscript on repository knowledge acquisition for software issue resolution</h3>
+            <h3>Know Before Fix: QA-Driven Repository Knowledge Acquisition for Software Issue Resolution</h3>
           </div>
-          <p class="meta">Co-author &middot; <span class="badge">Under submission</span></p>
+          <p class="meta">Haotian Lin, Silin Chen, Xiaodong Gu, Yuling Shi, Chengxi Pan, Jiaqi Ge, Mengfan Li, Jianghong Huang, Mengchieh Chuang, Beijun Shen, and Haibing Guan &middot; <span class="badge">arXiv:2607.11111, 2026</span></p>
           <p>
-            The work studies how software agents can proactively acquire repository-specific
-            knowledge before generating patches.
+            This work studies how software agents can proactively acquire repository-specific knowledge
+            before generating patches.
+          </p>
+          <p class="entry-links">
+            <a href="https://arxiv.org/abs/2607.11111" target="_blank" rel="noopener">Paper (arXiv)</a>
+            <a href="https://github.com/LionLin2003/ACQUIRE" target="_blank" rel="noopener">Code (Official Repository)</a>
           </p>
         </article>
       </section>
@@ -200,14 +210,13 @@
 
         <article class="entry">
           <div class="entry-head">
-            <h3>Calculus II Homework Grader</h3>
-            <span class="period">Mar 2026 &ndash; Aug 2026</span>
+            <h3>Homework Grader &mdash; Differential and Integral Calculus 1M</h3>
+            <span class="period">Oct 2026 &ndash; Present</span>
           </div>
           <p class="meta">Guangdong Technion &ndash; Israel Institute of Technology &middot; Shantou, China</p>
           <p>
-            Graded weekly Calculus II homework using course rubrics, evaluating mathematical correctness,
-            reasoning, and clarity. Provided consistent written feedback and documented recurring errors
-            to support fair assessment and help students improve.
+            Grade mathematical correctness, reasoning, and clarity, and provide students with consistent
+            written feedback.
           </p>
         </article>
       </section>
@@ -218,12 +227,12 @@
         <article class="entry">
           <div class="entry-head">
             <h3>Undergraduate Teaching Assistant &mdash; Linear Algebra &amp; Calculus</h3>
-            <span class="period">Mar 2026 &ndash; Aug 2026</span>
+            <span class="period">Mar 2026 &ndash; Aug 2026; Oct 2026 &ndash; Present</span>
           </div>
           <p class="meta">Guangdong Technion &ndash; Israel Institute of Technology &middot; Shantou, China</p>
           <p>
-            Facilitating workshops, guiding students through mathematical problems and theorems,
-            and supporting interactive problem-solving sessions.
+            Facilitate weekly workshops for approximately 60 students, guiding them through mathematical
+            problems, proofs, and interactive problem-solving sessions.
           </p>
         </article>
 
