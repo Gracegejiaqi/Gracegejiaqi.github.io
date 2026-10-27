@@ -3,8 +3,12 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Jiaqi Ge — undergraduate researcher in machine learning, software agents, and non-Euclidean deep learning.">
-    <title>Jiaqi Ge</title>
+    <meta name="description" content="Jiaqi Ge — mathematics undergraduate and researcher working on efficient machine learning, software agents, and scientific computing.">
+    <meta name="theme-color" content="#f4f2eb">
+    <meta property="og:title" content="Jiaqi Ge — Research & Projects">
+    <meta property="og:description" content="Research in Mixture-of-Experts pruning, repository QA, non-Euclidean learning, and software testing.">
+    <meta property="og:type" content="website">
+    <title>Jiaqi Ge — Research & Projects</title>
     <script>
       (function () {
         var saved = localStorage.getItem("theme");
@@ -15,236 +19,163 @@
     </script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=Manrope:wght@500;600;700;800&amp;display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
+    <a class="skip-link" href="#main">Skip to content</a>
     <header class="site-header">
-      <a class="brand" href="#top">Jiaqi Ge</a>
+      <a class="brand" href="#top" aria-label="Jiaqi Ge, home"><span class="brand-mark">JG</span><span>Jiaqi Ge</span></a>
       <nav class="nav" aria-label="Primary navigation">
-        <a href="#about">About</a>
-        <a href="#research">Research</a>
-        <a href="#publications">Publications</a>
-        <a href="#work">Experience</a>
+        <a href="#research">Research</a><a href="#publication">Publication</a><a href="#projects">Projects</a><a href="#experience">Experience</a>
       </nav>
-      <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Toggle dark mode">
-        <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></svg>
-        <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>
+      <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Switch color theme" aria-pressed="false">
+        <svg class="icon-sun" aria-hidden="true" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
+        <svg class="icon-moon" aria-hidden="true" viewBox="0 0 24 24"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>
       </button>
     </header>
 
-    <main id="top">
-      <section class="profile">
-        <div class="avatar" aria-hidden="true">
-          <img src="assets/photo.jpg" alt="" onerror="this.remove()">
-          <span>JG</span>
-        </div>
-        <div class="profile-info">
-          <h1>Jiaqi Ge</h1>
-          <p class="role">Undergraduate Student, B.Sc. in Mathematics with Computer Science</p>
-          <p class="affil">Guangdong Technion &ndash; Israel Institute of Technology</p>
-          <div class="contact-links">
-            <a href="mailto:ge24876@gtiit.edu.cn">
-              <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
-              Email
-            </a>
-            <a href="assets/jiaqi-ge-cv.pdf?v=20260916">
-              <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"/><path d="M14 2v4a2 2 0 0 0 2 2h4"/></svg>
-              CV
-            </a>
-            <a href="https://github.com/Gracegejiaqi" target="_blank" rel="noopener">
-              <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
-              GitHub
-            </a>
-            <a href="https://www.linkedin.com/in/jiaqi-ge-535ab7290" target="_blank" rel="noopener">
-              <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
-              LinkedIn
-            </a>
+    <main id="main">
+      <section class="hero" id="top">
+        <div class="hero-copy">
+          <p class="eyebrow"><span></span> Mathematics · Machine Learning · Software Agents</p>
+          <h1>Building rigorous methods for <em>efficient, reliable</em> intelligent systems.</h1>
+          <p class="hero-intro">I’m Jiaqi Ge, a Mathematics and Applied Mathematics undergraduate at Guangdong Technion. My work spans Mixture-of-Experts pruning, repository-aware software agents, non-Euclidean learning, and scientific computing.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="assets/jiaqi-ge-cv.pdf?v=20261027" target="_blank">View CV <span aria-hidden="true">↗</span></a>
+            <a class="button button-secondary" href="mailto:ge24876@gtiit.edu.cn">Email me</a>
+          </div>
+          <div class="social-row" aria-label="External profiles">
+            <a href="https://github.com/Gracegejiaqi" target="_blank" rel="noopener">GitHub <span aria-hidden="true">↗</span></a>
+            <a href="https://www.linkedin.com/in/jiaqi-ge-535ab7290" target="_blank" rel="noopener">LinkedIn <span aria-hidden="true">↗</span></a>
+            <a href="https://arxiv.org/abs/2607.11111" target="_blank" rel="noopener">arXiv <span aria-hidden="true">↗</span></a>
           </div>
         </div>
+        <aside class="hero-portrait" aria-label="Profile photograph and current status">
+          <div class="portrait-frame"><img src="assets/photo.jpg" alt="Portrait of Jiaqi Ge"><span class="portrait-index">01 / 26</span></div>
+          <div class="status-line"><span class="status-dot"></span><div><strong>Currently researching</strong><br>Training-free MoE expert pruning</div></div>
+        </aside>
       </section>
 
-      <section class="section" id="about">
-        <h2>About</h2>
-        <p>
-          I am an undergraduate student at Guangdong Technion &ndash; Israel Institute of Technology,
-          majoring in Mathematics with Computer Science in an English-taught program. My research spans
-          machine learning, software agents, Mixture-of-Experts, and geometric learning for non-Euclidean data.
-          In Summer 2026, I completed a research exchange at the Technion in Nadav Dym's research group,
-          supervised by Tal Amir. I have also been fortunate to work with Prof. Xiaodong Gu (Shanghai Jiao
-          Tong University), Prof. Lijie Hu (MBZUAI), Prof. Nazareno Aguirre, and Prof. Antti Rasila
-          (Guangdong Technion &ndash; Israel Institute of Technology).
-        </p>
-        <div class="info-grid">
-          <div class="info-card">
-            <h3>Education</h3>
-            <p class="info-title">Guangdong Technion &ndash; Israel Institute of Technology</p>
-            <p class="info-meta">B.Sc. in Mathematics with Computer Science &middot; Sep 2023 &ndash; Present</p>
-            <p class="info-title info-title-spaced">Technion &ndash; Israel Institute of Technology</p>
-            <p class="info-meta">Summer Research Exchange in Non-Euclidean Deep Learning &middot; Haifa, Israel &middot; Summer 2026</p>
-          </div>
-          <div class="info-card">
-            <h3>Awards</h3>
-            <p class="info-title">Chancellor's Scholarship</p>
-            <p class="info-meta">28,500 US Dollars in total &middot; 2023 &ndash; 2027</p>
-            <p class="info-meta">For outstanding performance in the Gaokao (China's college entrance examination)</p>
-          </div>
-          <div class="info-card">
-            <h3>Skills</h3>
-            <p class="info-title">Programming</p>
-            <p class="info-meta">Python, C, C++, Java, MATLAB, Assembly</p>
-            <p class="info-title info-title-spaced">Languages</p>
-            <p class="info-meta">Chinese (Native), English (Fluent)</p>
-          </div>
+      <section class="signal-strip" aria-label="Selected research results">
+        <article><strong>+10.23</strong><span>macro-accuracy points over official REAP on OLMoE-1B-7B</span></article>
+        <article><strong>+4.4</strong><span>Pass@1 points with repository QA on DeepSeek-V3.2</span></article>
+        <article><strong>≈150×</strong><span>faster document queries with FSW embeddings</span></article>
+      </section>
+
+      <section class="section research-section" id="research">
+        <div class="section-heading"><p class="section-kicker">Selected research</p><h2>Questions I’m working on</h2><p>Across model efficiency, agent reliability, and geometric representations.</p></div>
+        <div class="research-list">
+          <article class="research-item">
+            <div class="research-number">01</div>
+            <div class="research-body">
+              <div class="entry-topline"><p class="label">MBZUAI · Prof. Lijie Hu</p><p class="date">Jun 2026 — Present</p></div>
+              <h3>Training-Free Mixture-of-Experts Pruning</h3>
+              <p>Developing an ACDC-style iterative pruning method that evaluates candidates through forward passes on the currently pruned model—without downstream labels or post-pruning fine-tuning. The study covers router interactions, groupwise verification, and candidate-group splitting across six MoE families.</p>
+              <ul class="result-list">
+                <li><strong>LFM2.5-8B-A1B:</strong> 62.22% → 65.93% macro accuracy; C4 perplexity 16.465 → 15.601.</li>
+                <li><strong>OLMoE-1B-7B:</strong> 41.44% → 51.67% macro accuracy; C4 perplexity 15.184 → 14.290.</li>
+              </ul>
+              <p class="note">First-author manuscript in preparation for an ICLR workshop.</p>
+            </div>
+          </article>
+          <article class="research-item">
+            <div class="research-number">02</div>
+            <div class="research-body">
+              <div class="entry-topline"><p class="label">Shanghai Jiao Tong University · Prof. Xiaodong Gu</p><p class="date">Feb — May 2026</p></div>
+              <h3>Repository QA for Software Issue Resolution</h3>
+              <p>Evaluated ACQUIRE on all 500 SWE-bench Verified issues and built LLM-as-a-judge pipelines to study whether targeted repository questions help coding agents understand a codebase before generating patches.</p>
+              <ul class="result-list">
+                <li><strong>Pass@1:</strong> 58.4 → 62.2 with GPT-5-mini and 66.4 → 70.8 with DeepSeek-V3.2.</li>
+                <li><strong>Efficiency:</strong> QA injection reduced total agent rounds by 17.1%; locating and fixing rounds fell by 23.8% and 24.1%.</li>
+              </ul>
+              <div class="inline-links"><a href="https://arxiv.org/abs/2607.11111" target="_blank" rel="noopener">Read paper ↗</a><a href="https://github.com/LionLin2003/ACQUIRE" target="_blank" rel="noopener">Official code ↗</a></div>
+            </div>
+          </article>
+          <article class="research-item">
+            <div class="research-number">03</div>
+            <div class="research-body">
+              <div class="entry-topline"><p class="label">Technion · Supervisor: Tal Amir</p><p class="date">Summer 2026</p></div>
+              <h3>FSW Embeddings for Document Classification</h3>
+              <p>Embedded distributions over 300-dimensional fastText vectors into Euclidean space using Fourier Sliced-Wasserstein representations, replacing exact Word Mover’s Distance with fast Euclidean kNN on Amazon, Classic, and Reuters.</p>
+              <ul class="result-list">
+                <li><strong>Speed:</strong> about 0.02 seconds per query versus about 3 seconds for exact WMD.</li>
+                <li><strong>Hybrid approach:</strong> shortlist plus exact-WMD reranking estimates 4–29× speedups near WMD accuracy.</li>
+              </ul>
+            </div>
+          </article>
         </div>
       </section>
 
-      <section class="section" id="research">
-        <h2>Research</h2>
-
-        <article class="entry">
-          <div class="entry-head">
-            <h3>Fast Document Classification with FSW</h3>
-            <span class="period">Summer 2026</span>
+      <section class="section publication-section" id="publication">
+        <div class="section-heading compact"><p class="section-kicker">Publication</p><h2>Repository knowledge before code generation</h2></div>
+        <article class="paper-feature">
+          <div class="paper-mark" aria-hidden="true">QA</div>
+          <div class="paper-copy">
+            <p class="paper-type">arXiv:2607.11111 · 2026</p>
+            <h3>Know Before Fix: QA-Driven Repository Knowledge Acquisition for Software Issue Resolution</h3>
+            <p class="authors">Haotian Lin, Silin Chen, Xiaodong Gu, Yuling Shi, Chengxi Pan, <strong>Jiaqi Ge</strong>, Mengfan Li, Jianghong Huang, Mengchieh Chuang, Beijun Shen, and Haibing Guan.</p>
+            <div class="inline-links"><a href="https://arxiv.org/abs/2607.11111" target="_blank" rel="noopener">Abstract ↗</a><a href="https://arxiv.org/pdf/2607.11111" target="_blank" rel="noopener">PDF ↗</a><a href="https://github.com/LionLin2003/ACQUIRE" target="_blank" rel="noopener">Code ↗</a></div>
           </div>
-          <p class="meta">Research Exchange Student &middot; Nadav Dym's Research Group &middot; Technion &ndash; Israel Institute of Technology &middot; Haifa, Israel &middot; Supervised by Tal Amir</p>
-          <p>
-            Represented documents as probability measures over 300-dimensional fastText embeddings and
-            evaluated Fourier Sliced-Wasserstein representations on Amazon, Classic, and Reuters. FSW-based
-            kNN reduced per-query classification time by approximately 90&ndash;155&times;; shortlist-and-rerank
-            preserved near-WMD accuracy with 4&ndash;29&times; speedups. Extended the representations to clustering,
-            UMAP visualization, and supervised MLP and contrastive learning.
-          </p>
-        </article>
-
-        <article class="entry">
-          <div class="entry-head">
-            <h3>Repository QA for Software Issue Resolution</h3>
-            <span class="period">Feb 2026 &ndash; Present</span>
-          </div>
-          <p class="meta">Research Assistant &middot; Shanghai Jiao Tong University &middot; Advised by Prof. Xiaodong Gu</p>
-          <p>
-            Contributed to the experimental design, evaluation, and manuscript development of an
-            issue-driven repository QA framework that helps software agents acquire repository-specific
-            knowledge before patch generation. Ran baseline and QA-augmented SWE-bench experiments,
-            built judge-based evaluation pipelines at the question, set, and pairwise levels, and
-            analyzed fail-to-pass trajectories, QA usage, patch alignment, and ablation results.
-          </p>
-          <p class="entry-links">
-            <a href="https://arxiv.org/pdf/2607.11111" target="_blank" rel="noopener">Paper (arXiv PDF)</a>
-            <a href="https://github.com/LionLin2003/ACQUIRE" target="_blank" rel="noopener">Code (Official Repository)</a>
-          </p>
-        </article>
-
-        <article class="entry">
-          <div class="entry-head">
-            <h3>Mixture-of-Experts</h3>
-            <span class="period">Apr 10, 2026 &ndash; Present</span>
-          </div>
-          <p class="meta">Research Assistant &middot; MBZUAI &ndash; Mohamed bin Zayed University of Artificial Intelligence &middot; Advised by Prof. Lijie Hu</p>
-          <p>
-            Conducting research on Mixture-of-Experts (MoE).
-          </p>
-        </article>
-
-        <article class="entry">
-          <div class="entry-head">
-            <h3>Metamorphic Testing for Explainable AI</h3>
-            <span class="period">Oct 2025 &ndash; Feb 2026</span>
-          </div>
-          <p class="meta">Research Assistant &middot; Guangdong Technion &ndash; Israel Institute of Technology &middot; Advised by Prof. Nazareno Aguirre &middot; Project score: 90/100</p>
-          <p>
-            Built grammar-based fuzzing pipelines for multi-step text perturbations, generated
-            metamorphic properties, and evaluated HuggingFace sentiment models with Checklist.
-          </p>
-          <p class="entry-links">
-            <a href="assets/metamorphic-testing-report.pdf" target="_blank" rel="noopener">Report (PDF)</a>
-            <a href="https://github.com/Gracegejiaqi/metamorphic-testing-nlp" target="_blank" rel="noopener">Code</a>
-          </p>
-        </article>
-
-        <article class="entry">
-          <div class="entry-head">
-            <h3>Numerical Methods for Boundary Value Problems</h3>
-            <span class="period">Aug 2025 &ndash; Nov 2025</span>
-          </div>
-          <p class="meta">Research Assistant &middot; Guangdong Technion &ndash; Israel Institute of Technology &middot; Advised by Prof. Antti Rasila &middot; Project score: 95/100</p>
-          <p>
-            Studied shooting, finite-difference, and spectral methods for boundary value problems,
-            using MATLAB and Chebfun to solve nonlinear systems and Sturm-Liouville problems.
-          </p>
-          <p class="entry-links">
-            <a href="assets/bvp-chebfun-report.pdf" target="_blank" rel="noopener">Report (PDF)</a>
-            <a href="https://github.com/Gracegejiaqi/bvp-chebfun" target="_blank" rel="noopener">Code</a>
-          </p>
-        </article>
-
-      </section>
-
-      <section class="section" id="publications">
-        <h2>Publications</h2>
-        <article class="entry pub">
-          <div class="entry-head">
-            <h3>Manuscript on repository knowledge acquisition for software issue resolution</h3>
-          </div>
-          <p class="meta">Co-author &middot; <span class="badge">Under submission</span></p>
-          <p>
-            The work studies how software agents can proactively acquire repository-specific
-            knowledge before generating patches.
-          </p>
         </article>
       </section>
 
-      <section class="section" id="work">
-        <h2>Work Experience</h2>
-
-        <article class="entry">
-          <div class="entry-head">
-            <h3>Calculus II Homework Grader</h3>
-            <span class="period">Mar 2026 &ndash; Aug 2026</span>
-          </div>
-          <p class="meta">Guangdong Technion &ndash; Israel Institute of Technology &middot; Shantou, China</p>
-          <p>
-            Graded weekly Calculus II homework using course rubrics, evaluating mathematical correctness,
-            reasoning, and clarity. Provided consistent written feedback and documented recurring errors
-            to support fair assessment and help students improve.
-          </p>
-        </article>
+      <section class="section" id="projects">
+        <div class="section-heading"><p class="section-kicker">Selected projects</p><h2>From testing theory to numerical methods</h2><p>Course projects developed into reproducible technical work.</p></div>
+        <div class="project-grid">
+          <article class="project-card project-dark">
+            <p class="project-meta">Natural Language Processing · 2025–2026</p>
+            <h3>Grammar-Based Fuzzing for Metamorphic Testing of NLP Models</h3>
+            <p>Designed grammar-based fuzzing to automatically generate multi-step perturbation chains and metamorphic properties, then used CheckList to execute and evaluate INV/DIR tests. A nine-step case study on 100 Twitter airline posts exposed label flips, directional violations, and the threat of semantic drift.</p>
+            <div class="project-tags"><span>GrammarFuzzer</span><span>CheckList</span><span>Hugging Face</span></div>
+            <div class="card-links"><a href="assets/metamorphic-testing-report.pdf" target="_blank">Report ↗</a><a href="https://github.com/Gracegejiaqi/metamorphic-testing-nlp" target="_blank" rel="noopener">Code ↗</a></div>
+          </article>
+          <article class="project-card project-light">
+            <p class="project-meta">Scientific Computing · 2025</p>
+            <h3>Numerical Boundary Value Problems with Chebfun</h3>
+            <p>Connected the theory of IVPs, BVPs, Green’s functions, and Sturm–Liouville problems to MATLAB Chebfun experiments on nonlinear equations, singular eigenvalue problems, and dynamical systems.</p>
+            <p class="project-result"><strong>7.9 × 10<sup>−14</sup></strong> max error with 13 degrees of freedom, versus 4.4 × 10<sup>−7</sup> for a 1,024-point second-order finite-difference method.</p>
+            <div class="project-tags"><span>MATLAB</span><span>Chebfun</span><span>Spectral Methods</span></div>
+            <div class="card-links"><a href="assets/bvp-chebfun-report.pdf" target="_blank">Report ↗</a><a href="https://github.com/Gracegejiaqi/bvp-chebfun" target="_blank" rel="noopener">Code ↗</a></div>
+          </article>
+        </div>
       </section>
 
       <section class="section" id="experience">
-        <h2>Teaching Experience</h2>
-
-        <article class="entry">
-          <div class="entry-head">
-            <h3>Undergraduate Teaching Assistant &mdash; Linear Algebra &amp; Calculus</h3>
-            <span class="period">Mar 2026 &ndash; Aug 2026</span>
+        <div class="section-heading"><p class="section-kicker">Background</p><h2>Education & teaching</h2><p>A mathematical foundation, reinforced by teaching and applied research.</p></div>
+        <div class="background-grid">
+          <div>
+            <h3 class="column-title">Education</h3>
+            <article class="timeline-item"><span class="timeline-dot"></span><p class="date">Sep 2023 — Present</p><h4>Guangdong Technion – Israel Institute of Technology</h4><p>B.Sc. in Mathematics and Applied Mathematics · Shantou, China</p><p class="small">Coursework includes probability, calculus I–III, algebra, numerical analysis, applied mathematics, and combinatorics.</p></article>
+            <article class="timeline-item"><span class="timeline-dot"></span><p class="date">Summer 2026</p><h4>Technion – Israel Institute of Technology</h4><p>Summer Research Exchange · Non-Euclidean Deep Learning · Haifa, Israel</p></article>
+            <article class="timeline-item award-item"><span class="timeline-dot"></span><p class="date">2023 — 2027</p><h4>Chancellor’s Scholarship</h4><p>US$28,500 total · Awarded for Gaokao performance</p></article>
           </div>
-          <p class="meta">Guangdong Technion &ndash; Israel Institute of Technology &middot; Shantou, China</p>
-          <p>
-            Facilitating workshops, guiding students through mathematical problems and theorems,
-            and supporting interactive problem-solving sessions.
-          </p>
-        </article>
-
-        <article class="entry">
-          <div class="entry-head">
-            <h3>Undergraduate Teaching Assistant &mdash; Python</h3>
-            <span class="period">Oct 2025 &ndash; Jan 2026</span>
+          <div>
+            <h3 class="column-title">Teaching</h3>
+            <article class="timeline-item"><span class="timeline-dot"></span><p class="date">Mar — Aug 2026 · Oct 2026 — Present</p><h4>Undergraduate TA · Linear Algebra & Calculus</h4><p>Facilitate weekly problem-solving workshops for about 60 students.</p></article>
+            <article class="timeline-item"><span class="timeline-dot"></span><p class="date">Oct 2025 — Jan 2026</p><h4>Undergraduate TA · Python</h4><p>Supported programming labs, debugging, and foundational concepts.</p></article>
+            <article class="timeline-item"><span class="timeline-dot"></span><p class="date">Oct 2026 — Present</p><h4>Homework Grader · Calculus 1M</h4><p>Grade mathematical reasoning and provide written feedback.</p></article>
           </div>
-          <p class="meta">Guangdong Technion &ndash; Israel Institute of Technology &middot; Shantou, China</p>
-          <p>
-            Assisted with an introductory Python course, supervised lab sessions, and supported
-            students in debugging and core programming concepts.
-          </p>
-        </article>
+        </div>
+      </section>
+
+      <section class="section skills-section" id="skills">
+        <div class="skills-copy"><p class="section-kicker">Technical toolkit</p><h2>Comfortable moving between mathematical ideas and working systems.</h2></div>
+        <div class="skills-groups">
+          <div><h3>Programming</h3><p>Python · C · C++ · Java · MATLAB · Assembly</p></div>
+          <div><h3>ML & scientific tools</h3><p>PyTorch · Hugging Face Transformers · Chebfun · CheckList · GrammarFuzzer</p></div>
+          <div><h3>Workflow</h3><p>Git · Linux</p></div>
+          <div><h3>Languages</h3><p>Chinese (native) · English (fluent)</p></div>
+        </div>
+      </section>
+
+      <section class="contact-panel">
+        <div><p class="section-kicker">Let’s connect</p><h2>Interested in efficient models, reliable agents, or applied mathematics?</h2></div>
+        <a class="button button-primary" href="mailto:ge24876@gtiit.edu.cn">ge24876@gtiit.edu.cn <span aria-hidden="true">↗</span></a>
       </section>
     </main>
 
-    <footer class="footer">
-      <span>&copy; 2026 Jiaqi Ge</span>
-      <a href="mailto:ge24876@gtiit.edu.cn">ge24876@gtiit.edu.cn</a>
-    </footer>
+    <footer class="footer"><span>© <span id="year">2026</span> Jiaqi Ge</span><span>Mathematics · Research · Engineering</span><a href="#top">Back to top ↑</a></footer>
     <script src="script.js"></script>
   </body>
 </html>
